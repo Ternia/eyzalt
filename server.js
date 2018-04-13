@@ -38,27 +38,19 @@ client.on('message', message => {
 }
 });
 
-var RoleID = ''
-var RoleText1 = "Command : `/use` is not done."
-var BotID = ""
-
-client.on('message', message => {
-  if (message.content === '/useinfo') {
-    message.member.addRole(RoleID)
-  .then(console.log)
-  .catch(console.error);
-    message.reply(RoleText1)
-    message.member.removeRole('')
-    message.member.addRole('')
-
-}
-});
-
 var help = "**Commands: `/help /free /starter /advanced /god /use {key}`**"
 
 client.on('message', message => {
   if (message.content === '/help') {
       message.channel.sendMessage(help);
+}
+});
+
+var info = "Success"
+
+client.on('message', message => {
+  if (message.content === '/useinfo') {
+      message.author.sendMessage(info);
 }
 });
 
