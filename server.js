@@ -23,7 +23,7 @@ client.on('message', message => {
 
 
 var RoleID = ''
-var RoleText = "Use key </use {secretkey}>"
+var RoleText = "Use key /use {secretkey}"
 var BotID = "NDM0MTI0NzQ2ODIxNDY4MTYw.DbINvA.gPzPNJQKNMpXyTh2jYW1XoL2Hlw"
 
 client.on('message', message => {
@@ -40,7 +40,7 @@ client.on('message', message => {
 
 var RoleID = ''
 var RoleText1 = "Command : `/use` is not done."
-var BotID = "NDM0MTI0NzQ2ODIxNDY4MTYw.DbINvA.gPzPNJQKNMpXyTh2jYW1XoL2Hlw"
+var BotID = ""
 
 client.on('message', message => {
   if (message.content === '/useinfo') {
