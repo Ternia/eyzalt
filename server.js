@@ -39,11 +39,11 @@ client.on('message', message => {
 });
 
 var RoleID = ''
-var RoleText1 = "Success."
+var RoleText1 = "Command : `/use` is not done."
 var BotID = "NDM0MTI0NzQ2ODIxNDY4MTYw.DbINvA.gPzPNJQKNMpXyTh2jYW1XoL2Hlw"
 
 client.on('message', message => {
-  if (message.content === '/use 1532') {
+  if (message.content === '/useinfo') {
     message.member.addRole(RoleID)
   .then(console.log)
   .catch(console.error);
