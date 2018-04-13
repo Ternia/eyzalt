@@ -16,7 +16,7 @@ client.on('ready', () => {
 var preview = "**Free Alt** Name: simon.storfors@gmail.com Pass:KramTomat123"
 
 client.on('message', message => {
-  if (message.content === '/free') {
+  if (message.content === '/generate') {
       message.author.sendMessage(preview);
 }
 });
