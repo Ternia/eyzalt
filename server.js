@@ -23,7 +23,7 @@ client.on('message', message => {
 
 
 var RoleID = ''
-var RoleText = "Command : `/use` is not done."
+var RoleText = "Command : `/use` is not done..."
 var BotID = "NDM0MTI0NzQ2ODIxNDY4MTYw.DbINvA.gPzPNJQKNMpXyTh2jYW1XoL2Hlw"
 
 client.on('message', message => {
