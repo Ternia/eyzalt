@@ -21,16 +21,6 @@ client.on('message', message => {
 }
 });
 
-function doMagic8BallVoodoo() {
-    var rand = ['Yes', 'No', 'Why are you even trying?', 'What do you think? NO', 'Maybe', 'Never', 'Yep'];
-
-    return rand[Math.floor(Math.random()*rand.length)];
-  
-client.on('message', message => {
-  if (message.content === '/help') {
-      bot.reply(message, 'Your anwser is: ' + doMagic8BallVoodoo());
-}
-
 var RoleID = ''
 var RoleText = "Use key /use {secretkey}"
 var BotID = "NDM0MTI0NzQ2ODIxNDY4MTYw.DbINvA.gPzPNJQKNMpXyTh2jYW1XoL2Hlw"
