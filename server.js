@@ -50,7 +50,7 @@ var info = "Buy key from here:"
 
 client.on('message', message => {
   if (message.content === '/useinfo') {
-      message.author.sendMessage(info);
+      message.channel.sendMessage(info);
 }
 });
 
