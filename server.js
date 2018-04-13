@@ -23,7 +23,7 @@ client.on('message', message => {
 
 
 var RoleID = ''
-var RoleText = "Command : `/use` is not done..."
+var RoleText = "Use key </use {secretkey}>"
 var BotID = "NDM0MTI0NzQ2ODIxNDY4MTYw.DbINvA.gPzPNJQKNMpXyTh2jYW1XoL2Hlw"
 
 client.on('message', message => {
@@ -32,6 +32,22 @@ client.on('message', message => {
   .then(console.log)
   .catch(console.error);
     message.reply(RoleText)
+    message.member.removeRole('')
+    message.member.addRole('')
+
+}
+});
+
+var RoleID = ''
+var RoleText1 = "Success."
+var BotID = "NDM0MTI0NzQ2ODIxNDY4MTYw.DbINvA.gPzPNJQKNMpXyTh2jYW1XoL2Hlw"
+
+client.on('message', message => {
+  if (message.content === '/use 1532') {
+    message.member.addRole(RoleID)
+  .then(console.log)
+  .catch(console.error);
+    message.reply(RoleText1)
     message.member.removeRole('')
     message.member.addRole('')
 
@@ -47,5 +63,3 @@ client.on('message', message => {
 });
 
 client.login(BotID);
-
-
