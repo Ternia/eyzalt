@@ -33,7 +33,7 @@ client.on('message', message => {
   .catch(console.error);
     message.reply(RoleText)
     message.member.removeRole('')
-    message.member.addRole('')
+    message.member.addRole('Starter')
 
 }
 });
