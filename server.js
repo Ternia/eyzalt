@@ -11,7 +11,6 @@ client.on('ready', () => {
     client.user.setGame(`/help | By skullymax`)
     client.user.setStatus('online');
    });
-};
 
 var preview = "**Free Alt** Name: simon.storfors@gmail.com Pass:KramTomat123"
 
