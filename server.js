@@ -46,7 +46,7 @@ client.on('message', message => {
 }
 });
 
-var info = "Success"
+var info = "Buy key from here:"
 
 client.on('message', message => {
   if (message.content === '/useinfo') {
