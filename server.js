@@ -36,7 +36,7 @@ client.on('message', message => {
 }
 });
 
-var help = "**Commands: `/help /free /starter /advanced /god /use {key}`**"
+var help = "**Commands: `/help /free `More Commands soon.**"
 
 client.on('message', message => {
   if (message.content === '/help') {
