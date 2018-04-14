@@ -12,7 +12,7 @@ client.on('ready', () => {
     client.user.setStatus('online');
    });
 
-var preview = "**Free Alt** Name: simon.storfors@gmail.com Pass:KramTomat123"
+var preview = "**Free Alt** ashar.wallace.word@gmail.com:66ry46"
 
 client.on('message', message => {
   if (message.content === '/free') {
